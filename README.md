@@ -10,11 +10,9 @@ Angular CLI need to be installed globally for building the project (for ES6 to E
 
 Deployed to firebase using `firebase-cli`.
 
-**[Open Weather](https://open-weather-ea834.firebaseapp.com)**
+**[Open Weather](http://adamant-window.surge.sh/)**
 
-## Documentation
 
-**[Detailed Code Documentation](https://anshad.github.io/open-weather/)**
 
 ## Development server
 
@@ -35,7 +33,7 @@ Run `ng serve -o` for a dev server. App will open in the browser at `http://loca
 
 ## Technology stack
 
-HTML5, CSS3, Angular 4, Bootstrap 4, SASS, ES6, Webpack, NPM
+HTML5, CSS3, Angular 7, Bootstrap 4, SASS, ES6, Webpack, NPM
 
 ## Features
 
