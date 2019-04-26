@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <app-header [cityName]="cityName"></app-header>
+    <div class="row p-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="input-group mb-3">
+
+                    <input type="text" class="form-control" [(ngModel)]="searchText" id="search-text" placeholder="Search By City"
+                           aria-label="Example text with button addon"
+                           aria-describedby="button-addon1">
+                    <div class="input-group-prepend">
+                        <button (click)="searchByCity()" class="btn btn-primary" type="button" id="button-addon1">Search</button>
+                    </div>
+
+
+            </div>
+            <div *ngIf="this.errorMessage" class="alert alert-danger" role="alert">
+                City Not Found
+            </div>
+
+        </div>
+        <div class="col-md-12 text-center">
+            <app-weather-list [weathers]="weatherForecastData"></app-weather-list>
+        </div>
+    </div>
+</div>
