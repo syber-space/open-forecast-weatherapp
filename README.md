@@ -16,7 +16,7 @@ Deployed to firebase using `firebase-cli`.
 
 ## Development server
 
-Run `ng serve -o` for a dev server. App will open in the browser at `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server. App will open in the browser at `http://localhost:4240/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
@@ -33,24 +33,19 @@ Run `ng serve -o` for a dev server. App will open in the browser at `http://loca
 
 ## Technology stack
 
-HTML5, CSS3, Angular 7, Bootstrap 4, SASS, ES6, Webpack, NPM
+HTML5, CSS3, Angular 7, Bootstrap 4, SASS, ES6, Webpack, NPM, Node
 
 ## Features
 
 * Display 5 days weatherforecast using openweathermap api `https://api.openweathermap.org`
+* Default weather city is London
+* Search any city weather
+* Detect current user location and display weather of the user city
 * Documentation using `https://github.com/compodoc/compodoc`
 * Coded with `Angular CLI` and `VS Code` in love with `Mac`
 * Unit tests with `jasmine` and `karma`
-* Demo deployed to `firebase` using firebase cli tools
+* Demo deployed to `surge` using surge cli tools
 * editorconfig and code lints
+* 
 
-## Todo
 
-* ~~Improve data extraction method~~
-* ~~Documentation~~
-* Update UI with some colors, highlights for current day, etc.
-* Option to get weather list with a city name
-* Implement routing for deatiled page on each date (for full description on weather)
-* ~~Unit tests~~
-* CI & CD using Travis CI
-* Responsive design and fixes.

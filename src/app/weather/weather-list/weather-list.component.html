@@ -8,8 +8,8 @@
             <i class="owi owi-{{ item.weather[0].icon }}" title="{{ item.weather[0].main }}"></i>
             <div class="weather-info">
               <p class="time">
-                <!--{{ item.dt | myDate | date: 'hh:mm a' }}-->
-                {{ item.dt | myDate | dateX:'hh:mm A' }}
+                {{ item.dt | myDate | date: 'hh:mm a' }}
+                <!--{{ item.dt | myDate | dateX:'hh:mm A' }}-->
               </p>
               <p class="temp">
                 {{ item.main.temp }}&deg;C

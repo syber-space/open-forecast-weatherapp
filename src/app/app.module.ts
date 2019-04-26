@@ -7,7 +7,6 @@ import {HeaderComponent} from './header/header.component';
 import {WeatherListComponent} from './weather/weather-list/weather-list.component';
 import {MyDatePipe} from './my-date.pipe';
 import {FormsModule} from '@angular/forms';
-import { DateXPipe } from './date-x.pipe';
 
 
 @NgModule({
@@ -16,7 +15,6 @@ import { DateXPipe } from './date-x.pipe';
         HeaderComponent,
         WeatherListComponent,
         MyDatePipe,
-        DateXPipe
     ],
     imports: [
         BrowserModule, HttpModule, FormsModule

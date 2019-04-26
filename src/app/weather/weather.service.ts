@@ -1,8 +1,10 @@
 import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+//import {Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
 import {Http} from '@angular/http';
 import {environment} from '../../environments/environment';
+import {Observable} from "rxjs";
+import {catchError, map} from "rxjs/operators";
 
 /**
  * Service for fetching weather forecast data from Openweathermap API
@@ -28,9 +30,10 @@ export class WeatherService {
             .get(
                 environment.baseUrl +
                 location
+            ).pipe(
+                map(response => this.extractData(response)),
+                catchError(this.handleError)
             )
-            .map(response => this.extractData(response))
-            .catch(this.handleError);
     }
 
     /**
