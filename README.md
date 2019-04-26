@@ -1,6 +1,6 @@
 # OpenWeather
 
-A web app for displaying 5 days weatherforecast for a city (`Bangalore, India`).
+A web app for displaying 5 days weatherforecast for a city.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
 
